@@ -100,8 +100,8 @@
                                 <th>No.</th>
                                 <th>Nama </th>
                                 <th>Deskripsi</th>
-                                <th>jenis</th>
-                                <th>Tahun Ditemukan</th>
+                                <th>jenisku</th>
+                                <th>Tahun Lahir</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
