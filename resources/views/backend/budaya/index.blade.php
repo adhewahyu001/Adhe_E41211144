@@ -22,7 +22,7 @@
                         <li class="nav-item">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#basicModal">
-                                Tambah Budaya
+                                Tambah Penerima
                             </button>
                         </li>
                     </ul>
@@ -47,7 +47,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Tambah Budaya</h5>
+                                    <h5 class="modal-title">Tambah Penerima</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -61,18 +61,18 @@
                                             <input type="text" class="form-control" name="nama" id="nama" required>
                                         </div>
                                         <div class="form-group mb-3">
-                                            <label for="deskripsi">deskripsi </label>
+                                            <label for="deskripsi">Kreteria Keadaan </label>
                                             <input type="text" class="form-control" name="deskripsi" id="deskripsi" required>
                                         </div>
                                         <div class="form-group mb-3">
-                                            <label for="lokasi">lokasi </label>
+                                            <label for="lokasi">Alamat </label>
                                             <input type="text" class="form-control" name="lokasi" id="lokasi" required>
                                         </div>
 
 
 
                                         <div class="form-group mb-3">
-                                            <label for="tahun_ditemukan">Tahun Ditemukan</label>
+                                            <label for="tahun_ditemukan">Tahun Terima</label>
                                             <input type="number" class="form-control" name="tahun_ditemukan"
                                                 id="tahun_ditemukan" min="1900" max="{{ date('Y') }}" required>
                                         </div>
@@ -91,7 +91,7 @@
                     </div>
 
                 </div>
-                <h5 class="card-title">Pendidikan</h5>
+                <h5 class="card-title">Penerima Dana Bansos</h5>
                 {{-- data Pendidikan --}}
                 <div class="table-responsive">
                     <table class="table table-striped">
@@ -99,9 +99,9 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Nama </th>
-                                <th>Deskripsi</th>
-                                <th>jenisku</th>
-                                <th>Tahun Lahir</th>
+                                <th>Kreteria Keadaan</th>
+                                <th>Alamat</th>
+                                <th>Tahun Terima</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -118,7 +118,7 @@
                                 <td>
                                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                         data-bs-target="#editModal-{{ $item->id }}">
-                                        Edit
+                                        Ubah
                                     </button>
                                     <form action="{{ route('budaya.destroy', $item->id) }}" method="POST"
                                         class="d-inline">

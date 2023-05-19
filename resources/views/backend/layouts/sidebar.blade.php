@@ -247,7 +247,7 @@
         <li class="nav-item">
             <a class="nav-link " href="{{ url('budaya') }}">
                 <i class="bi bi-menu-button-wide"></i>
-                <span>Budaya</span>
+                <span>Sosial Dana Bansos</span>
             </a>
         </li>
 
